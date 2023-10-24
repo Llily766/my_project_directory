@@ -12,7 +12,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class ProduitController extends AbstractController
 {
     #[Route( '/Add',name:'Produit_index')]
-    public function AddProduit ()
+    public function index ()
     {
     $Produit = new Produit ;
             $form = $this->createForm(ProductType::class,$Produit);
