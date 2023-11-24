@@ -2,14 +2,7 @@
 namespace App\Controller;
 
 use Doctrine\DBAL\Schema\Index;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-
-class HomeController
-{
-    #[Route('/', name: 'Index')]
-    public function number() : Response
-    {
-	return new Response(rand(0,100));
-     }
-}
+use Symfony\Component\DependencyInjection\Loader\Configurator\html;
